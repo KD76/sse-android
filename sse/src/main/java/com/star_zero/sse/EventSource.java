@@ -73,6 +73,10 @@ public class EventSource {
         return readTimeout;
     }
 
+    public void setReadTimeout(long timeout) {
+        readTimeout = timeout;
+    }
+
     public void connect() {
         close();
         readyState = CONNECTING;
